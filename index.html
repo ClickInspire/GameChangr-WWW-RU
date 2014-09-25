@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GameChangr - Professional coaching for Dota 2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS Files comes here -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+    <link href="css/nivo-lightbox.css" rel="stylesheet" media="screen">
+    <link href="css/nivo_lightbox_themes/default/default.css" rel="stylesheet" media="screen">
+    <link href="css/colors/green.css" rel="stylesheet" media="screen">
+    <link href="css/responsive.css" rel="stylesheet" media="screen">
+		<link href="css/jquery.nouislider.css" rel="stylesheet" media="screen">
+		<link href="css/jquery.nouislider.pips.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="css/simple-line-icons.css">
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Google fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic" rel="stylesheet" type="text/css">
+    
+    <!-- Modernizer and IE specyfic files -->  
+    <script src="js/modernizr.custom.js"></script>
+      
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--[if IE 9]>
+     <link href="css/ie.css" rel="stylesheet" media="screen">
+    <![endif]-->
+
+    
+  </head>
+  
+  <body>
+    
+    <!--###############################-->
+    <!--PRELOADER #####################-->
+    <!--###############################-->
+    
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--###############################-->
+    <!--HOME ##########################-->
+    <!--###############################-->
+
+    <section id="home">
+    <div class="container">
+        <div class="row">
+            <div id="homescreen" class="col-sm-12 col-md-12 col-lg-12">
+                 <div id="logo"><a href="/index.html"><img src="images/logo.png" alt="logo"></a></div>
+                 <div id="logo_header"><h5></h5></div>
+                 <div id="slogan">
+									 <h1><span class="highlight">Будь лучшим в своей игре!</span></h1>
+									 <h2><span class="highlight">Тренерство Dota 2 </span></h2>
+              		 <a class="cta2 find-match">Найти матч</a>
+								 </div>
+									 
+            </div> <div class="clearfix"></div>
+        </div>
+    </div>
+    </section>
+		
+    <!--###############################-->
+    <!--Find a Match #########################-->
+    <!--###############################-->
+    
+    <section id="find-match" hidden>
+        <div class="container">
+            <div class="row">
+							<div class="col-lg-6 col-lg-offset-3">
+								<h3>Find Match</h3>
+								<div class="input-group">
+									<label>Your Name</label>
+									<div class="row dual-input">
+										<div class="col-md-6">
+											<input type="text" name="first-name" placeholder="First Name">
+										</div>
+										<div class="col-md-6">
+											<input type="text" name="last-name" placeholder="Last Name">
+										</div>
+									</div>
+								</div>
+								<div class="input-group">
+									<label>DotaBuff Link</label>
+									<input type="text" name="gamertag" placeholder="e.g. http://www.dotabuff.com/players/86745912">
+									<span class="form-helper">We use dotabuff.com for stats to help in finding a match.<br>Please make sure your Dota 2 matches and profile are public for this reason.<br><a target="_blank" href="http://www.dotabuff.com/pages/enabling-statistics">Learn how to do so here.</a></span>
+								</div>
+								<div class="input-group">
+									<label>MMR (assumed unranked if not provided)</label>
+									<input type="text" name="mmr" placeholder="e.g. 2700 (optional)">
+								</div>
+								<div class="input-group">
+									<label>Role</label>
+									<input type="text" name="role" placeholder="e.g. Support (optional)" class="form-input">
+								</div>
+								<div class="input-group">
+									<label>Hero</label>
+									<input type="text" name="character" placeholder="e.g. Anti-Mage (optional)">
+								</div>
+								<div class="input-group">
+									<label>Email</label>
+									<input type="email" name="email" placeholder="">
+								</div>
+								<div class="input-group">
+									<label>Regions</label>
+									<p class="field-error" data-error="regions" hidden>Please select at least one region.</p>
+									<div class="row">
+										<div class="col-xs-4">
+											<ul class="checkbox-list">
+												<li><label><input type="checkbox" name="region[]" value="US East"> US East</label></li>
+												<li><label><input type="checkbox" name="region[]" value="US West"> US West</label></li>
+												<li><label><input type="checkbox" name="region[]" value="South America"> South America</label></li>
+											</ul>
+										</div>
+										<div class="col-xs-4">
+											<ul class="checkbox-list">
+												<li><label><input type="checkbox" name="region[]" value="Russia"> Russia</label></li>
+												<li><label><input type="checkbox" name="region[]" value="Dubai"> Dubai</label></li>
+												<li><label><input type="checkbox" name="region[]" value="Australia"> Australia</label></li>
+											</ul>
+										</div>
+										<div class="col-xs-4">
+											<ul class="checkbox-list">
+												<li><label><input type="checkbox" name="region[]" value="Europe West"> Europe West</label></li>
+												<li><label><input type="checkbox" name="region[]" value="Europe East"> Europe East</label></li>
+												<li><label><input type="checkbox" name="region[]" value="SE Asia"> SE Asia</label></li>
+												<li><label><input type="checkbox" name="region[]" value="South Africa"> South Africa</label></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="input-group">
+									<label>Languages</label>
+									<p class="field-error" data-error="languages" hidden>Please select at least one language.</p>
+									<div class="row">
+										<div class="col-xs-4">
+											<ul class="checkbox-list">
+												<li><label><input type="checkbox" name="language[]" value="English"> English</label></li>
+												<li><label><input type="checkbox" name="language[]" value="Korean"> Korean</label></li>
+											</ul>
+										</div>
+										<div class="col-xs-4">
+											<ul class="checkbox-list">
+												<li><label><input type="checkbox" name="language[]" value="Russian"> Russian</label></li>
+												<li><label><input type="checkbox" name="language[]" value="Spanish"> Spanish</label></li>
+											</ul>
+										</div>
+										<div class="col-xs-4">
+											<ul class="checkbox-list">
+												<li><label><input type="checkbox" name="language[]" value="Chinese"> Chinese</label></li>
+												<li><label><input type="checkbox" name="language[]" value="Portuguese"> Portuguese</label></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="input-group slider">
+									<label>Price Range</label>
+									<div id="price-range"></div>
+									<span class="form-helper">Price range affects the quality and skill level of teacher.<br>If we're unable to find a suitable teacher in your price range we will let you know.</span>
+								</div>
+								<div class="input-group checkbox">
+									<label><input type="checkbox" name="opt-in"> Opt-in receive GameChangr updates and play tips.</label>
+								</div>
+								<button type="submit" class="full-width">Find Match</button>
+								<p class="form-error" hidden>There were errors in the form, please check above.</p>
+							</div>
+							<div class="thank-you col-xs-12 text-center" hidden>
+								<p>Thank you, we will send you an email as soon as we've found your matches.</p>
+							</div>
+            </div>
+        </div>
+    </section>
+		
+    <!--###############################-->
+    <!--Find a Match #########################-->
+    <!--###############################-->
+    
+    <section id="coach-application" hidden>
+        <div class="container">
+            <div class="row">
+							<div class="col-lg-6 col-lg-offset-3">
+								<h3>Coach Application</h3>
+								<div class="input-group">
+									<label>Your Name</label>
+									<div class="row dual-input">
+										<div class="col-md-6">
+											<input type="text" name="first-name" placeholder="First Name">
+										</div>
+										<div class="col-md-6">
+											<input type="text" name="last-name" placeholder="Last Name">
+										</div>
+									</div>
+								</div>
+								<div class="input-group">
+									<label>DotaBuff Link or Gamertag</label>
+									<input type="text" name="gamertag" placeholder="EG.Arteezy OR http://www.dotabuff.com/players/86745912">
+									<span class="form-helper">We use dotabuff.com for stats in analyzing your play style.<br>Please make sure your Dota 2 matches and profile are public for this reason.<br><a target="_blank" href="http://www.dotabuff.com/pages/enabling-statistics">Learn how to do so here.</a></span>
+								</div>
+								<div class="input-group">
+									<label>MMR (approx.)</label>
+									<input type="text" name="mmr" placeholder="e.g. 3900">
+								</div>
+								<div class="input-group">
+									<label>Regions</label>
+									<p class="field-error" data-error="regions" hidden>Please select at least one region.</p>
+									<div class="row">
+										<div class="col-xs-4">
+											<ul class="checkbox-list">
+												<li><label><input type="checkbox" name="region[]" value="US East"> US East</label></li>
+												<li><label><input type="checkbox" name="region[]" value="US West"> US West</label></li>
+												<li><label><input type="checkbox" name="region[]" value="South America"> South America</label></li>
+											</ul>
+										</div>
+										<div class="col-xs-4">
+											<ul class="checkbox-list">
+												<li><label><input type="checkbox" name="region[]" value="Russia"> Russia</label></li>
+												<li><label><input type="checkbox" name="region[]" value="Dubai"> Dubai</label></li>
+												<li><label><input type="checkbox" name="region[]" value="Australia"> Australia</label></li>
+											</ul>
+										</div>
+										<div class="col-xs-4">
+											<ul class="checkbox-list">
+												<li><label><input type="checkbox" name="region[]" value="Europe West"> Europe West</label></li>
+												<li><label><input type="checkbox" name="region[]" value="Europe East"> Europe East</label></li>
+												<li><label><input type="checkbox" name="region[]" value="SE Asia"> SE Asia</label></li>
+												<li><label><input type="checkbox" name="region[]" value="South Africa"> South Africa</label></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="input-group">
+									<label>Languages</label>
+									<p class="field-error" data-error="languages" hidden>Please select at least one language.</p>
+									<div class="row">
+										<div class="col-xs-4">
+											<ul class="checkbox-list">
+												<li><label><input type="checkbox" name="language[]" value="English"> English</label></li>
+												<li><label><input type="checkbox" name="language[]" value="Korean"> Korean</label></li>
+											</ul>
+										</div>
+										<div class="col-xs-4">
+											<ul class="checkbox-list">
+												<li><label><input type="checkbox" name="language[]" value="Russian"> Russian</label></li>
+												<li><label><input type="checkbox" name="language[]" value="Spanish"> Spanish</label></li>
+											</ul>
+										</div>
+										<div class="col-xs-4">
+											<ul class="checkbox-list">
+												<li><label><input type="checkbox" name="language[]" value="Chinese"> Chinese</label></li>
+												<li><label><input type="checkbox" name="language[]" value="Portuguese"> Portuguese</label></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="input-group">
+									<label>Email</label>
+									<input type="email" name="email" placeholder="">
+								</div>
+								<div class="input-group">
+									<label>Availability</label>
+									<p class="field-error" data-error="availability" hidden>Please select at least one day.</p>
+									<ul class="availability">
+										<li data-value="0"><a>Sun</a></li>
+										<li data-value="1"><a>Mon</a></li>
+										<li data-value="2"><a>Tue</a></li>
+										<li data-value="3"><a>Wed</a></li>
+										<li data-value="4"><a>Thu</a></li>
+										<li data-value="5"><a>Fri</a></li>
+										<li data-value="6"><a>Sat</a></li>
+									</ul>
+									<span class="form-helper">Availability only helps us narrow down matches.<br>We always contact ahead of time to confirm your availability.</span>
+								</div>
+								<div class="input-group slider">
+									<label>Session Rate (1 hour duration)</label>
+									<div id="rate-range"></div>
+									<span class="form-helper">
+										We use this to help find coaches within the player's budget.<br>
+										Skill matching is always the first concern.<br>
+										However, we realize not everyone can afford top tier talent.<br>
+										Price yourself as you feel your time deserves. You can always change this later.
+									</span>
+								</div>
+								<div class="input-group checkbox">
+									<label><input type="checkbox" name="opt-in"> Opt-in receive GameChangr updates and coaching tips.</label>
+								</div>
+								<button type="submit" class="full-width">Apply</button>
+								<p class="form-error" hidden>There were errors in the form, please check above.</p>
+							</div>
+							<div class=" col-xs-12 text-center thank-you" hidden>
+								<p>Thank you, we will send you an email after we've had a chance to review your information.</p>
+							</div>
+            </div>
+        </div>
+    </section>
+    
+    <!--###############################-->
+    <!--ABOUT #########################-->
+    <!--###############################-->
+    
+    <section id="about">
+        <div class="container">
+            
+            <div class="row" id="about_intro">
+                <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2" >
+                    <h2>Игры с тренером</h2>
+                    <p>Найдите правильного человека, с которым поднимитесь на ступень выше.
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="row" >
+                
+                <div class="col-sm-4 col-md-4 col-lg-4" id="service_1">
+										<span aria-hidden="true" class="services_icon icon-user-following"></span>
+                    <h3>Обучайся у лучших</h3>
+                    <p>Мы подберём вам тренера, который может обучить вас более лучшему умению играть. Будь то обучение героям, позиционирование, игра за кэрри, за Поддержку, обучение игры на средней линии.
+                    </p>
+                </div>
+                
+                <div class="col-sm-4 col-md-4 col-lg-4" id="service_2">
+										<span aria-hidden="true" class="services_icon icon-graduation"></span>
+                    <h3>Натренерованы Обучать</h3>
+                    <p>Если игрок хороший, не значит, что он хороший учитель. Мы тренируем каждого из наших подопечнх как проводить занятия.
+                    </p>
+                </div>
+                
+                <div class="col-sm-4 col-md-4 col-lg-4" id="service_3">
+										<span aria-hidden="true" class="services_icon icon-badge"></span>
+                    <h3>Удобная статистика</h3>
+                    <p>Наша система обзоров и повторов занятий позволит вам быть абсолютно увереными в вашем тренере.
+                    </p>
+                </div>
+                
+            </div>
+    
+        </div>
+    </section>
+    
+    <!--Arrows-->
+    <section class="arrows_box">
+    <div class="arrows">
+        <svg viewBox="0 0 32 32" class="arrow_down" id="about_arrow_next">
+            <use xlink:href="#right-arrow"></use></svg>
+        <svg viewBox="0 0 32 32" class="arrow_up" id="about_arrow_back">
+            <use xlink:href="#left-arrow"></use></svg>
+    </div>
+    </section>
+    <!--######-->
+
+
+    <!--###############################-->
+    <!--Features 1 ####################-->
+    <!--###############################-->
+    
+    <section id="features_1">
+        <div class="container">
+            <div class="row"  >
+                <div class="col-sm-6 col-md-6  col-lg-6">
+                  <img src="images/features1b.png" class="img-responsive image_back" id="features1a_image" alt="img">
+                  <img src="images/features1a.png" class="img-responsive image_front" id="features1b_image" alt="img">
+                </div>
+                
+                <div class="col-sm-6 col-md-6 col-lg-6" id="features_1_content">
+                    <h2>Подробные обзоры</h2>
+                    <p>Посмотрите насколько хорош был ваш тренер в прошлых занятиях.
+                    </p>
+                    <div class="feature">
+                        <span aria-hidden="true" class="feature_icon icon-camcorder"></span>
+                        <div>
+                            <h4>Доверие через модератора обратной связи</h4>
+                            <p>Читайте отзывы и смотрите предыдущие уроки, чтобы понять насколько хорошо пройдёт ваше занятие.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <span aria-hidden="true" class="feature_icon icon-wallet"></span>
+                        <div>
+                            <h4>Возврат денег у новых тренеров!</h4>
+                            <p>Каждый тренер, у которого меньше 5 отзывов гарантированно защищён возможностью возврата денег в случае плохого занятия.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                
+            </div>
+            
+        </div>
+       
+    </section>
+
+    <!--Arrows-->
+    <section class="arrows_box">
+        <div class="arrows">
+            <svg viewBox="0 0 32 32" class="arrow_down" id="features_1_arrow_next">
+                <use xlink:href="#right-arrow"></use></svg>
+            <svg viewBox="0 0 32 32" class="arrow_up" id="features_1_arrow_back">
+                <use xlink:href="#left-arrow"></use></svg>
+        </div>
+    </section>
+    <!--######-->
+    
+
+    <!--###############################-->
+    <!--Features 2 ####################-->
+    <!--###############################-->
+
+    <section id="features_2">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-sm-6 col-md-6 col-lg-6" id="features_2_content">
+                    <h2>Гибкие цены</h2>
+                    <p>Тренеры ставят сообственные цены в зависимости от умения, доступности и качества занятий.
+                    </p>
+                    <div class="feature">
+                        <span aria-hidden="true" class="feature_icon icon-equalizer"></span>
+                        <div>
+                            <h4>Честная рыночная выгода</h4>
+                            <p>Уроки стоят столько, сколько вы готовы заплатить. Тренера устанавливают сообственные цены, в зависимости от их умений и отзывов, что делает цену уроков справедливой.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <span aria-hidden="true" class="feature_icon icon-credit-card"></span>
+                        <div>
+                            <h4>Бюджет вашего занятия</h4>
+                            <p>Установите ваш бюджет и мы найдём несколько матчей, подходящих вам по цене.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="col-sm-6 col-md-6  col-lg-6" >
+                    <img src="images/features2b.png" class="img-responsive image_back" id="features2a_image" alt="img">
+                    <img src="images/features2a.png" class="img-responsive image_front" id="features2b_image" alt="img">
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </section>
+
+
+    <!--Arrows-->
+    <section class="arrows_box arrows_no_border">
+        <div class="arrows">
+            <svg viewBox="0 0 32 32" class="arrow_down" id="features_2_arrow_next">
+                <use xlink:href="#right-arrow"></use></svg>
+            <svg viewBox="0 0 32 32" class="arrow_up" id="features_2_arrow_back">
+                <use xlink:href="#left-arrow"></use></svg>
+        </div>
+    </section>
+    <!--######-->
+
+
+    <!--###############################-->
+    <!--Features 3 ####################-->
+    <!--###############################-->
+
+    <section id="features_3">
+        <div class="container">
+            <div class="row" id="features_3_intro">
+                <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" >
+                    <h2>Как это работает</h2>
+                    <p>Занятия основываются на часовом уроке.<br>Расписание на ваше удобство.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row" >
+                <div class="col-sm-4 col-md-4 ol-lg-4" id="features_3_content_left">
+                    
+                    <div class="feature">
+                        <h4>Прямое общение</h4>
+                        <p>Перед матчем, ваш тренер попросит вас рассказать о себе и о вашем стиле игры.
+                        </p>
+                    </div>
+                    
+                    <div class="feature">
+                        <h4>Оценка во время игры</h4>
+                        <p>Когда ваше занятие идёт, ваш тренер будет обьяснять вам, что и как вам стоит сделать иначе и почему это нужно сделать.
+                        </p>
+                    </div>
+                    
+                </div>
+            
+                <div class="col-sm-4 col-md-4 ol-lg-4" id="features_3_content_center">
+                    <img src="images/features3.png" class="img-responsive" id="features3_image" alt="img">
+                </div>
+
+                <div class="col-sm-4 col-md-4 ol-lg-4" id="features_3_content_right">
+                    
+                    <div class="feature">
+                        <h4>Формат занятия</h4>
+                        <p>Вы сами выбираете как будет проходить ваше занятие. Хотите учиться прямо в сражении или хотите подчерпнуть что то полезное в закрытых лобби?
+                        </p>
+                    </div>
+                    
+                    <div class="feature">
+                        <h4>Завершение</h4>
+                        <p>Занятие заканчивается на вещах, на которых вам надо сфокусироваться, а также оценкой вашего тренера.
+                        </p>
+                    </div>
+                    
+                </div>
+           
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!--Arrows - version with custom background color to match section above-->
+    <section class="arrows_box arrows_box_bg arrows_no_border">
+        <div class="arrows">
+            <svg viewBox="0 0 32 32" class="arrow_down" id="features_3_arrow_next">
+                <use xlink:href="#right-arrow"></use></svg>
+            <svg viewBox="0 0 32 32" class="arrow_up" id="features_3_arrow_back">
+                <use xlink:href="#left-arrow"></use></svg>
+        </div>
+    </section>
+    <!--######-->
+
+
+    <!--###############################-->
+    <!--Gallery #######################-->
+    <!--###############################-->
+
+    <section id="gallery">
+        <div class="container">
+            <div class="row" id="gallery_intro">
+                <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" >
+                    
+                    <h2>Примеры занятий</h2>
+                    <p>Здесь вы найдёте несколько занятий, которые были проведены. Просмотрите их и подумайте, как должна пройти ваша тренировка.
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="row" id="gallery_carousel">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+									<p style="margin-top: 80px; font-style: italic">Пример сессии в ближайшее время...</p>
+                    <div id="owl-gallery" class="owl-carousel">
+                        <!--
+												<div class="item"><a href="images/gallery1.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="images/gallery1@2x.jpg"><img src="images/gallery1.jpg" class="img-responsive img-rounded" alt="img"></a></div>
+                        <div class="item"><a href="images/gallery2.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="images/gallery2@2x.jpg"><img src="images/gallery2.jpg" class="img-responsive img-rounded" alt="img"></a></div>
+                        <div class="item"><a href="images/gallery3.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="images/gallery3@2x.jpg"><img src="images/gallery3.jpg" class="img-responsive img-rounded" alt="img"></a></div>
+												-->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <!--Arrows-->
+    <section class="arrows_box">
+        <div class="arrows">
+            <svg viewBox="0 0 32 32" class="arrow_down" id="gallery_arrow_next">
+                <use xlink:href="#right-arrow"></use></svg>
+            <svg viewBox="0 0 32 32" class="arrow_up" id="gallery_arrow_back">
+                <use xlink:href="#left-arrow"></use></svg>
+        </div>
+    </section>
+    <!--######-->
+    
+    
+    <!--###############################-->
+    <!--FAQ ###########################-->
+    <!--###############################-->
+    
+    <section id="faq">
+        <div class="container">
+            <div class="row" id="faq_intro">
+                <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" >
+                    
+                    <h2>Вопрос - ответ</h2>
+                    <p>
+                    </p>
+                    
+                </div>
+						</div>
+            <div class="row" id="faq_content">
+                <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" id="dev_blog_posts">
+									<div class="faq-question">
+										<h3>Сколько это стоит?</h3>
+										<p>Зависит от умений игр, который вы просите. В среднем все цены от 10$ до 40$ (Долларов США), но всё зависит от тренера.</p>
+
+										<p><strong>ВОЗВРАТ ДЕНЕГ ГАРАНТИРОВАН</strong> за каждый плохой урок с тренером у которого меньше 5 отзывов. В этом случае обе стороны должны согласиться с тем, что занятие прошло успешно. Мы следим за отзывами о занятиях и всегда готовы рассмотреть любую жалобу.</p>
+									</div>
+									<div class="faq-question">
+										<h3>Как проходят занятия?</h3>
+										<p>Когда вы назначите время, тренер добавит вас в друзья через Steam, после чего вам нужно будет добавить вашего тренера через раздел "Найти тренера (Find a Coach)" в игре Dota 2.</p>
+
+										<p>Занятия длятся час, но могут быть меньше или больше по вашему пожеланию.</p>
+
+										<p>Час вас и вы можете делать всё что захотите. Мы советуем сыграть настоящий матч против игроков потому что это заставляет вас думать об изменении вашего стиля игры, проходя через все боевые действия и давление которое вы встречаете в обычном матче.</p>
+
+										<p>Ближе к концу занятия тренер проведёт с вами быстрый анализ ваших действий и ответит на все ваши вопросы по игрк. Также он подскажит вам пару вещей, над которыми стоит работать.</p>
+									</div>
+									<div class="faq-question">
+										<h3>Как я пойму, что мой тренер подходит для моего обучения?</h3>
+										<p>Все тренера подыскиваются нашей командой по нескольким критериям, включая:</p>
+										<ul>
+											<li><p>Просмотр их игр.</p></li>
+											<li><p>Просмотр статистики (Используя сайты вроде Dotabuff.com и т.п.)</p></li>
+											<li><p>Проведения качественного занятия с одним из нас.</p></li>
+										</ul>
+
+										<p>После этого отзывы тренера будут говорить сами за себя. Мы гарантируем возврат денег в случае плохого занятия с тренерами, у которых меньше, чем 5 отзывов.</p>
+                	</div>
+									<div class="faq-requestion">
+										<h3>Что если я остался недоволен занятием?</h3>	
+										<p>В случае если кто то недоволен занятием, мы просматриваем повтор и делаем выводы, должно ли быть занятие возмещёным.</p>
+									</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--Arrows - single arrow wersion-->
+    <section class="arrows_box">
+        <div class="arrow_single">
+            <svg viewBox="0 0 32 32" class="arrow_up" id="dev_blog_arrow_back">
+                <use xlink:href="#left-arrow"></use></svg>
+        </div>
+    </section>
+    <!--######-->
+    
+    
+    <!--###############################-->
+    <!--Blog ##########################-->
+    <!--###############################
+    
+    <section id="dev_blog">
+        <div class="container">
+            <div class="row" id="dev_blog_intro">
+                <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" >
+                    
+                    <h2>GameChangr Blog</h2>
+                    <p>Check out some of our posts from Dota 2 experts with tips improving your game.
+                    </p>
+                    
+                </div>
+                
+            </div>
+            <div class="row" id="dev_blog_content">
+                <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" id="dev_blog_posts">
+                    <div class="dev_blog_post">
+                        <h3><a href="single_post.html">Interview with Designer: Justin Mezzell</a></h3>
+                        <h6>Mat Przegietka&nbsp;&nbsp; • &nbsp;&nbsp;February 6, 2014&nbsp;&nbsp; • &nbsp;&nbsp;5 Comments</h6>
+                    </div>
+                    
+                    <div class="dev_blog_post">
+                        <h3><a href="single_post.html">Compact and Elegant Side Menus in Website Designs</a></h3>
+                        <h6>Mat Przegietka&nbsp;&nbsp; • &nbsp;&nbsp;February 1, 2014&nbsp;&nbsp; • &nbsp;&nbsp;5 Comments
+                        </h6>
+                    </div>
+                    
+                    <div class="dev_blog_post">
+                        <h3><a href="single_post.html">Time-Saving Tools and Resources for Freelance Designers</a></h3>
+                        <h6>Mat Przegietka&nbsp;&nbsp; • &nbsp;&nbsp;January 20, 2014&nbsp;&nbsp; • &nbsp;&nbsp;2 Comments
+                        </h6>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                <a href="blog.html" class="cta2" id="button_blog">More posts</a>
+                
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="arrows_box">
+        <div class="arrow_single">
+            <svg viewBox="0 0 32 32" class="arrow_up" id="dev_blog_arrow_back">
+                <use xlink:href="#left-arrow"></use></svg>
+        </div>
+    </section>
+    ######-->
+    
+    
+    <!--###############################-->
+    <!--Newsletter and Footer #########-->
+    <!--###############################-->
+    
+    <section id="footer">
+        <div class="container">
+            <div class="row" id="newsletter">
+            	<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" >
+                <h2>Готовы к игре?</h2>
+              	<a class="cta2 find-match">Найти матч</a>
+              </div>
+            </div>
+           
+           <div class="row">
+               <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1" id="share">
+                   <!--
+                   <div id="social_icons">
+                       <ul>
+                           <li><svg viewBox="0 0 32 32" id="fb_icon" onclick="location.href='#'"><use xlink:href="#facebook"></use></svg></li>
+                           <li><svg viewBox="0 0 32 32" id="tw_icon" onclick="location.href='#''"><use xlink:href="#twitter"></use></svg></li>
+                           <li><svg viewBox="0 0 32 32" id="in_icon" onclick="location.href='#'"><use xlink:href="#linkedin"></use></svg></li>
+                           <li><svg viewBox="0 0 32 32" id="g_icon" onclick="location.href='#'"><use xlink:href="#google-plus"></use></svg></li>
+                           <li><svg viewBox="0 0 32 32" id="pin_icon" onclick="location.href='#'"><use xlink:href="#pinterest"></use></svg></li>
+                           <li><svg viewBox="0 0 32 32" id="fli_icon" onclick="location.href='#'"><use xlink:href="#flickr"></use></svg></li>
+                       </ul>
+                   </div>
+                   -->
+                   <p>Все права принадлежат &copy; 2014 GameChangr</p>
+     
+               </div>
+           </div>
+           
+        </div>
+    </section>    
+
+    <!-- JavaScript plugins comes here -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/retina.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+		<script src="js/jquery.nouislider.full.min.js"></script>
+    <script type="text/javascript">
+        $('document').ready(function(){
+					$('#rate-range').noUiSlider({
+						start: [20],
+						step: 5,
+						range: {
+							'min': 5,
+							'max': 100
+						}
+					});
+					
+					$('#rate-range').noUiSlider_pips({
+						mode: 'steps', 
+						density: 2
+					});
+					
+					$('#price-range').noUiSlider({
+						start: [15, 25],
+						step: 5,
+						connect: true,
+						range: {
+							'min': 5,
+							'max': 100
+						}
+					});
+					
+					$('#price-range').noUiSlider_pips({
+						mode: 'steps', 
+						density: 2
+					});
+					
+					var showPanel, 
+							hidePanel;
+						
+					$('.find-match').click(function () { 
+						showPanel = $('#find-match'), 
+						hidePanel = $('#coach-application');
+						
+						analytics.track('Show Find Match');
+						
+						checkForHide();
+					});
+						
+					$('.coach-apply').click(function () { 
+						hidePanel = $('#find-match'), 
+						showPanel = $('#coach-application');
+						
+						analytics.track('Show Coach Application');
+						
+						checkForHide();
+					});
+					
+					function checkForHide() {
+						if (hidePanel.is(':visible')) {
+							hidePanel.fadeOut(initializeShowPanel);	
+						} else {
+							initializeShowPanel();
+						}
+					}
+					
+					function initializeShowPanel() {
+						if (showPanel.is(':visible')) {
+							if (showPanel.find('.thank-you').is(':visible')) {
+								$.scrollTo(showPanel,1000, function() {
+									showPanel.find('.thank-you').fadeOut(function() {
+										showPanel.find('.thank-you').prev().fadeIn();
+									});
+								});
+							} else {
+								$.scrollTo(showPanel,1000);
+							}
+						} else {
+							$.scrollTo('#about',1000,function() {
+								showPanel.fadeIn();
+							});
+						}
+					}
+				});
+    </script>
+    <script>
+        var url ='images/icons.svg';
+        var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
+        document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
+    </script>
+    <script type="text/javascript">
+			var analyticsKey;
+			
+			switch (window.location.host) {
+				case 'gamechangr.ca':
+				case 'coaches.gamechangr.ca':
+					analyticsKey = 'bo2nbehyev';
+					break;
+				default: 
+					analyticsKey = 'to3y6ndpja';
+					break;
+			}
+			
+			window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+			window.analytics.load(analyticsKey);
+			window.analytics.page();
+		</script>
+  </body>
+</html>
